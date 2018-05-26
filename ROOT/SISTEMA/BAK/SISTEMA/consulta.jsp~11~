@@ -1,0 +1,85 @@
+<%@ page import="business.*" %>
+<%@ page errorPage="error.jsp" %>
+<%@ page session="false" %>
+
+<%-- Cualquier error producido en esta pagina es pasada a una pagina de error.
+Se necesita la session en falso para que no crear un objeto "session"
+dentro de la pagina, puesto que si existe algun error como de
+session o id de session no valida (expira la session), no se genere una session valida
+nuevamente, sin embargo aunque no se considerara esto y se creara una session
+nueva en esta pagina no se tendria el valor (id.usuario) dentro la session --%>
+
+<%
+ response.setHeader("Cache-Control", "no-cache");
+ response.setHeader("Pragma", "no-cache");
+ response.setHeader("Expires", "-1");
+
+ HttpSession session = request.getSession(false);
+ if ((session == null)) {
+   	throw new SecurityException("Session nula");
+ }
+ else if (! request.isRequestedSessionIdValid()) {
+  	throw new SecurityException("Id de session ya no valida");
+ }
+
+ Integer id = (Integer)session.getAttribute("id.usuario");
+
+ if (id==null) {
+  	throw new SecurityException("Se tiene una session valida pero no un usuario valido ");
+ }
+
+ Bd bd = Bd.getBd();
+ Usuario usuario = bd.getUsuario_id(id.intValue());
+ if (usuario==null) {
+  	throw new SecurityException("No existe el usuario de la session");
+ }
+%>
+
+<html>
+<head>
+<title> CONSULTA DE DATOS DE USUARIO </title>
+</head>
+
+<body bgcolor="#CCCCD6" text="#000000">
+<center>
+<img src="../../../imagenes/comunidad.jpg" width="764" height="65" alt="Fondo de la Comunidad">
+<hr size="3">
+<img src="../../../imagenes/consulta.jpg" width="482" height="30" alt="Consulta">
+<br><br>
+<font face="Arial, Helvetica, sans-serif" size="4"><b>"<%= usuario.getNombre() %>"</b></font> <br>
+
+<%--se podria utilizar un throw new SecurityException pero quedaria invalida la session --%>
+<% Vector logs = usuario.getLogs();
+%>
+  <hr width="170" size="4">
+  <p><table id="mitabla1" cellspacing="0" border="1" cellpadding="7" bgcolor="#F4F2EA"></p>
+  <tr>
+    <th bgcolor="#006666"> <font face="arial,helvetica" size="-1" color="#FFFFFF">Fecha </font></th>
+    <th bgcolor="#006666"> <font face="arial,helvetica" size="-1" color="#FFFFFF">Hora  </font></th>
+    <th bgcolor="#006666"> <font face="arial,helvetica" size="-1" color="#FFFFFF">Operacion  </font></th>
+  </tr>
+
+<%
+  for (int i = 0; i < logs.size(); i++) {
+    Log tr = (Log)logs.get(i);
+    out.println("<tr>");
+    out.println(" <td>" + tr.getFecha().substring(0,tr.getFecha().indexOf(" ")) +"</td>");
+    out.println(" <td>" + tr.getFecha().substring(tr.getFecha().indexOf(" ")) +"</td>");
+    out.println(" <td>" + tr.getDescripcion() +"</td>");
+    out.println("</tr>");
+  }
+%>
+</table>
+
+<br>
+<hr size="3">
+  &nbsp;&nbsp;<a href="menu.jsp"><img src="../../../imagenes/inicio.jpg" width="38" height="37" alt="inicio" border="0"></a>
+  &nbsp;&nbsp;<a href="listar.jsp"><img src="../../../imagenes/lista.jpg" width="38" height="37" alt="lista de cuentas financieras" border="0"></a>
+  &nbsp;<a href="pag_cambio.html"><img src="../../../imagenes/contrasena.jpg" width="86" height="37" alt="contrasena" border="0"></a>
+  &nbsp;<a href="/servlet/control"><img src="../../../imagenes/contacto.jpg" width="61" height="37" alt="contacto" border="0"></a>
+  &nbsp;&nbsp;<a href="/servlet/salir"><img src="../../../imagenes/salir.jpg" border="0" alt="salir"></a><br>
+<hr size="3">
+
+</center>
+</body>
+</html>

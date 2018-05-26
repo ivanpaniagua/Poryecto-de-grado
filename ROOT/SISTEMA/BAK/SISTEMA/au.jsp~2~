@@ -1,0 +1,55 @@
+<%@ page import="java.util.*" %>
+<%@ page import="business.*" %>
+<%@ page session="false" %>
+<%@ page errorPage="PaginaError.jsp" %>
+
+<%
+    //Almacena el login pasado en la solicitud
+    String login = null;
+    //Almacena el password pasado en la solicitud
+    String password = null;
+
+    login = request.getParameter("login");
+    password = request.getParameter("password");
+
+    //Tratamos que ni el navegador o proxy alamacenen en la cache
+    response.setHeader("Cache-Control", "no-cache");
+    response.setHeader("Pragma", "no-cache");//No-cache
+    response.setHeader("Expires", "-1");//0
+
+    String datos = "Host:"+request.getRemoteHost()+" User-Agent:"+request.getHeader("User-Agent")+
+    " Local:"+request.getLocale(); //+" Accept-Language:"+request.getHeader("Accept-Language"); es lo mismo que "Local"
+    datos+="tasdkjklfjsaklfjlsajfljsldjfsafoisjaofijasojfoijdfoijsaoifjoiasjfoidjsoifjaoisdjfoiajsoifjsdao";
+
+    if(datos.length()> 255 )
+      datos=datos.substring(0,255);
+
+    //Se verifican si son cadenas validas esto es que no sea vacio, no contengan ciertos caracteres peligrosos.
+    // http://ivan:8080/servlet/autentifica?login=mio&password=mysql&imageField.x=0&imageField.y=0
+    if (!Util.Valido(login) || !Util.Valido(password)) {
+     	throw new SecurityException("No se especificaron los datos o son datos invalidos");
+    }
+
+    else {
+      // Se crea la conexion a la Bd. la primera vez. Si ya existia solo se la reutiliza.
+      bd = Bd.getBd();
+      // Se obtiene el usuario de la bd.
+      Usuario usuario = bd.getUsuario(login);
+      //Si no se devuelve nada de la bd, "usuario" es nulo
+      if (usuario == null ) {
+       	throw new SecurityException("Usuario no existe registrado");
+      }
+      else if (usuario.autentifica(password,datos,request.getRemoteAddr()) ) {
+         //si es true crea una nueva session si es que no existia antes
+         HttpSession session = request.getSession(true);
+         session.setMaxInactiveInterval(7*60);  // 7 minutos=7*60
+         session.setAttribute("id.usuario", new Integer(usuario.getId_i()));//usuario.getLogin()); //no deberia ser login
+         session.setAttribute("bindings.listener", new session_listener(usuario.getId_i(),datos,request.getRemoteAddr()));//CustomBindingListener(getServletContext()));
+         response.sendRedirect("/sistema/src/sistema/menu.jsp");
+      }
+      else {
+         throw new SecurityException(usuario.getErrores());
+      }
+    }
+
+%>

@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Ingreso al Sistema</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+<!--
+function Validacion(Formulario)
+{
+
+  if (Formulario.login.value == "")
+  {
+    alert("Escriba el valor para el campo \" Login \".");
+    Formulario.login.focus();
+    return (false);
+  }
+
+  if (Formulario.password.value.length < 6)
+  {
+    alert("Escriba al menos 6 caracteres en el campo \"PASSWORD \".");
+    Formulario.password.focus();
+    return (false);
+  }
+}
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#CCCCD6" text="#000000">
+<center>
+<img src="imagenes/comunidad.jpg" width="764" height="65">
+<hr size="3">
+  <form name="form1" method="post" action="servlet/autentifica" onsubmit="return Validacion(this)" >
+    <!-- form name="form2" method="post" action="servlet/sistema.control" onsubmit="return Validacion(this)"-->
+    <img src="imagenes/ingreso.jpg" width="479" height="30">
+    <!-- TABLA CONTENEDORA -->
+    <table border="0" width=50% cellspacing="10" cellpadding="0" >
+
+<UNICA FILA>
+        <tr><!-- TITULO-->
+               <td align="LEFT" bgcolor="#006666" colspan="2"><font face="arial,helvetica" size="-1" color="#FFFFFF">&nbsp;&nbsp;<b>L O G I N&nbsp;&nbsp;&nbsp;&nbsp;P A S S W O R D</b></font></td>
+        </tr>
+
+        <tr><!-- CUERPO-->
+
+               <td COLSPAN=2 bgcolor="#F4F2EA">
+          <!-- width=100% -->
+          <font face="arial,helvetica" size="-1">El campo <b>PASSWORD</b> tiene
+          que contener <b>mas de 6 caracteres</b> y diferencia entre mayusculas
+          y minusculas. Si Ud. no posee una cuenta, se debera contactar con el
+          Fondo de la Comunidad.</font>
+          <table border="3" width=100% cellspacing=0 cellpadding=2> <!-- TABLA DE DATOS-->
+        <tr>
+          <td width=30% align =right><font size="2" face="arial"><strong>LOGIN</strong></font></td>
+          <td width=70% > <input type="text" size=20 maxlength="44" name="login"> </td>
+        </tr>
+
+        <tr>
+          <td align =right><font size="2" face="arial"><strong>PASSWORD</strong></font></td>
+          <td> <input type='password' size=20 maxlength="44" name="password"></td>
+        </tr>
+
+                </table> <!-- FIN DE TABLA DE DATOS -->
+
+        </td> <!-- FIN DONDE SE DEFINE EL COLOR -->
+        </tr><!-- FIN DE CUERPO-->
+
+        </table><!-- FIN DE LA TABLA CONTENEDORA-->
+    <!--input type="image" border="0" name="ingreso" src="imagenes/ingreso.jpg" alt="ingreso"-->
+        <input type="submit" value="INGRESO">
+        </form>
+
+<hr size="3">
+
+<font face="arial, verdana" size="1">COPYRIGHT © 2003 <br> Ivan Paniagua Monroy </font>
+  <br>
+</center>
+
+</body>
+</html>

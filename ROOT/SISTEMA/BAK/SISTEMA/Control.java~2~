@@ -1,0 +1,49 @@
+package sistema;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+import java.util.*;
+
+public class control extends HttpServlet {
+  private static final String CONTENT_TYPE = "text/html";
+  /**Inicializar variables globales*/
+  public void init(ServletConfig config) throws ServletException {
+    super.init(config);
+  }
+  /**Procesar una petición HTTP Get*/
+  public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    response.setContentType(CONTENT_TYPE);
+    PrintWriter out = response.getWriter();
+    out.println("<html>");
+    out.println("<head><title>control</title></head>");
+    out.println("<body>");
+    out.println("<p>El servlet ha recibido un GET. Esta es la respuesta.</p>");
+    out.println("</body></html>");
+//    String s = request.getServletPath();
+//    String s1 = s.substring(s.lastIndexOf("/"));
+//    HttpSession httpsession = request.getSession(false);
+//    if(httpsession != null)
+//    {
+//    if(s1.equals("/login.jsp"))
+//    response.sendRedirect("/already_loggedin.html");
+//    else
+//    if(s1.equals("/logout.jsp"))
+//      {
+//       if(httpsession != null)
+//       httpsession.invalidate();
+//      }
+//    }
+//    else
+//    if(!s1.equals("/logout.jsp") && !s1.equals("/login.jsp"))
+//    response.sendRedirect("/not_logged_in.html");
+
+  }
+  /**Procesar una petición HTTP Post*/
+  public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    doGet(request, response);
+  }
+  /**Limpiar recursos*/
+  public void destroy() {
+  }
+}

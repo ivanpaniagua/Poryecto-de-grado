@@ -1,0 +1,201 @@
+package sistema;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+import java.util.*;
+import business.*;
+
+/**
+ * Título:       Proyecto de Tesis
+ * Descripcion:
+ * Copyright:    Copyright (c) 2001
+ * Empresa:      Fondo de la Comunidad
+ * @author Ivan Paniagua
+ * @version 1.0
+ */
+
+public class autentifica extends HttpServlet {
+//  private static final String CONTENT_TYPE = "text/html";
+  private Bd bd;
+
+  /**Inicializar variables globales*/
+  public void init(ServletConfig config) throws ServletException {
+    super.init(config);//en chp9 de java servlet programing no existe esto directamente la creacion de un pool
+  }
+
+  /**
+    * Procesar una petición HTTP Get
+    * @param request Objeto que contiene la solicitud al servlet
+    * @param response Objeto que contiene la respuesta desde el servlet
+    *
+    * @exception ServletException Si una excepcion del servlet ocurre
+    * @exception IOException Si un error de entrada/salida occurre
+    **/
+  public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    doPost(request, response);
+  }
+
+  /**
+    * Procesar una petición HTTP Post
+    * @param request Objeto que contiene la solicitud al servlet
+    * @param response Objeto que contiene la respuesta desde el servlet
+    *
+    * @exception ServletException Si una excepcion del servlet ocurre
+    * @exception IOException Si un error de entrada/salida occurre
+    **/
+  public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    //Almacena el login pasado en la solicitud
+    String login = null;
+    //Almacena el password pasado en la solicitud
+    String password = null;
+
+    login = request.getParameter("login");
+    password = request.getParameter("password");
+
+    //Tratamos que ni el navegador o proxy alamacenen en la cache
+    response.setHeader("Cache-Control", "no-cache");
+    response.setHeader("Pragma", "no-cache");//No-cache
+    response.setHeader("Expires", "-1");//0
+
+    String datos = "Host:"+request.getRemoteHost()+" User-Agent:"+request.getHeader("User-Agent")+
+    " Local:"+request.getLocale(); //+" Accept-Language:"+request.getHeader("Accept-Language"); es lo mismo que "Local"
+//    datos+="tasdkjklfjsaklfjlsajfljsldjfsafoisjaofijasojfoijdfoijsaoifjoikljglsdfjgklsfjklfsglk"+
+//    "ñfdojñfdgjfsdjgpfjpgfjspgjdspgjpsffjpsdjfpsdjfpojsdasjfoidjsoifjaoisdjfoiajsoifjsdao";
+//
+//    if(datos.length()> 255 )
+//      datos=datos.substring(0,255);
+
+    //Se verifican si son cadenas validas esto es que no sea vacio, no contengan ciertos caracteres peligrosos.
+    // http://ivan:8080/servlet/autentifica?login=mio&password=mysql&imageField.x=0&imageField.y=0
+    if (!Util.Valido(login) || !Util.Valido(password)) {
+      request.setAttribute("error", "No se especificaron los datos o son datos invalidos");
+      getServletContext().getRequestDispatcher("/sistema/src/sistema/error.jsp").forward(request,response);
+      return;
+    }
+
+    else {
+      // Se crea la conexion a la Bd. la primera vez. Si ya existia solo se la reutiliza.
+      bd = Bd.getBd();
+      // Se obtiene el usuario de la bd.
+      Usuario usuario = bd.getUsuario(login);
+      //Si no se devuelve nada de la bd, "usuario" es nulo
+      if (usuario == null ) {
+        request.setAttribute("error", "Usuario no existe registrado");
+        getServletContext().getRequestDispatcher("/sistema/src/sistema/error.jsp").forward(request,response);
+        return;
+      }
+      else if (usuario.autentifica(password,datos,request.getRemoteAddr()) ) {
+         //si es true crea una nueva session si es que no existia antes
+         HttpSession session = request.getSession(true);
+         session.setMaxInactiveInterval(3*60);//(int)bd.tiempo_log);  // 7 minutos=7*60
+         session.setAttribute("id.usuario", new Integer(usuario.getId_i()));//usuario.getLogin()); //no deberia ser login
+         session.setAttribute("bindings.listener", new session_listener(usuario.getId_i(),datos,request.getRemoteAddr()));//CustomBindingListener(getServletContext()));
+         response.sendRedirect("/sistema/src/sistema/menu.jsp");
+      }
+      else {
+         request.setAttribute("error", usuario.getErrores());
+         getServletContext().getRequestDispatcher("/sistema/src/sistema/error.jsp").forward(request,response);
+         return;
+      }
+    }
+  }
+
+  /**Limpiar recursos*/
+  public void destroy() {
+  System.out.println("se destruye el servlet");
+  }
+}
+
+/*
+    String s = request.getRequestURI();//getServletPath()
+    String s1 = s.substring(s.lastIndexOf("/"));
+    HttpSession session = request.getSession(false);
+    if ((session != null) && (request.isRequestedSessionIdValid())) {
+        if(s1.equals("/salir.jsp")) {
+           session.invalidate();//ctrl +may+n y para ir crtl+n
+        }
+    }
+    else {
+    try{response.sendRedirect("/error.html");}
+    getServletContext().getRequestDispatcher("/sistema/src/sistema/ingreso.jsp").forward(request,response);
+    catch (Exception e) {System.out.print("Error no se puede redireccionar"); }
+    if(!s1.equals("/ingreso.jsp") && !s1.equals("/salir.jsp"))
+    response.sendRedirect("/not_logged_in.html");
+    }
+
+
+  public void doPost1(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    //Almacena el login pasado en la solicitud
+    String login = null;
+    //Almacena el password pasado en la solicitud
+    String password = null;
+
+    login = request.getParameter("login");
+    password = request.getParameter("password");
+
+    //Tratamos que ni el navegador o proxy alamacenen en la cache
+    response.setHeader("Cache-Control", "no-cache");
+    response.setHeader("Pragma", "no-cache");//No-cache
+    response.setHeader("Expires", "-1");//0
+//  response.setDateHeader ("Expires", 0);// sacado de JDCBook de Sun en aucserv.html pero tambien dice algo de SSL
+
+    String datos = "Host:"+request.getRemoteHost()+" Local:"+request.getLocale() +
+    " User-Agent:"+request.getHeader("User-Agent"); //+" Accept-Language:"+request.getHeader("Accept-Language"); es lo mismo que "Local"
+
+    //Se verifican si son cadenas validas esto es que no sea vacio, no contengan ciertos caracteres peligrosos.
+    // http://ivan:8080/servlet/autentifica?login=mio&password=mysql&imageField.x=0&imageField.y=0
+    if (!Util.Valido(login) || !Util.Valido(password)) {
+      request.setAttribute("error", "No se especificaron los datos o son datos invalidos");
+      getServletContext().getRequestDispatcher("/sistema/src/sistema/error.jsp").forward(request,response);
+      return;
+    }
+
+    else {
+      // Se crea la conexion a la Bd. la primera vez. Si ya existia solo se la reutiliza.
+      bd = Bd.getBd();
+      // Se obtiene el usuario de la bd.
+      Usuario usuario = bd.getUsuario(login);
+      //Si no se devuelve nada de la bd, "usuario" es nulo
+      if (usuario == null ) {
+        request.setAttribute("error", "Usuario no existe registrado");
+        getServletContext().getRequestDispatcher("/sistema/src/sistema/PaginaError.jsp").forward(request,response);
+        return;
+      }
+      else if (usuario.getBloqueo().equals("n") && usuario.contraseña(password)) {
+         //si es true crea una nueva session si es que no existia antes se tenia antes 1800 o sea 30 minutos
+         HttpSession session = request.getSession(true);
+         session.setMaxInactiveInterval(7*60);  // 7 minutos=7*60
+         session.setAttribute("id.usuario", usuario.getLogin()); //no deberia ser login
+         session.setAttribute("bindings.listener", new session_listener(usuario.getId_i(),datos,request.getRemoteAddr()));//new CustomBindingListener(getServletContext()));
+         bd.setLog(usuario.getId_i(),bd.AUTE,datos+" sessionid:"+session.getId(),request.getRemoteAddr());
+         response.sendRedirect("/sistema/src/sistema/menu.jsp");
+      }
+      else if (usuario.getBloqueo().equals("s")) {
+         request.setAttribute("error", "Usuario bloqueado");
+         getServletContext().getRequestDispatcher("/sistema/src/sistema/error.jsp").forward(request,response);
+         return;
+      }
+      else if (usuario.getBloqueo().equals("n") && !usuario.contraseña(password)) {
+         bd.setLog(usuario.getId_i(), bd.INVA, datos, request.getRemoteAddr());
+         //el metodo getIngresos solo devuelve ingresos fallidos
+         if( bd.getIngresos(usuario.getId_i(),true) < usuario.getIntentos_c() ){
+          System.out.println("No se han alcanzado todavia los intentos que se pueden tratar");
+         }
+         else {
+          System.out.println("Se han alcanzado y se deberia bloquear esta cuenta con UPDATE");
+          bd.Bloqueo(usuario.getId_i(),true);
+         }
+
+         request.setAttribute("error", "Contraseña erronea");
+         getServletContext().getRequestDispatcher("/sistema/src/sistema/error.jsp").forward(request,response);
+         return;
+      }
+      else {
+         request.setAttribute("error", "Error desconocido");
+         getServletContext().getRequestDispatcher("/sistema/src/sistema/error.jsp").forward(request,response);
+         return;
+      }
+    }
+  }
+*/

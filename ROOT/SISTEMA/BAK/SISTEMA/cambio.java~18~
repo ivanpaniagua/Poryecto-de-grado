@@ -1,0 +1,118 @@
+package sistema;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+import java.util.*;
+import business.*;
+
+public class cambio extends HttpServlet {
+
+  private Bd bd;
+  /**Inicializar variables globales*/
+  public void init(ServletConfig config) throws ServletException {
+    super.init(config);
+  }
+
+  /**
+    * Procesar una petición HTTP Get
+    * @param request Objeto que contiene la solicitud al servlet
+    * @param response Objeto que contiene la respuesta desde el servlet
+    *
+    * @exception ServletException Si una excepcion del servlet ocurre
+    * @exception IOException Si un error de entrada/salida occurre
+    **/
+  public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    doPost(request, response);
+  }
+
+  /**
+    * Procesar una petición HTTP Post
+    * @param request Objeto que contiene la solicitud al servlet
+    * @param response Objeto que contiene la respuesta desde el servlet
+    *
+    * @exception ServletException Si una excepcion del servlet ocurre
+    * @exception IOException Si un error de entrada/salida occurre
+    **/
+  public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    //Almacena el password anterior pasado en la solicitud
+    String password = null;
+    //Almacena el password nuevo pasado en la solicitud
+    String nuevo = null;
+    //Almacena el password nuevo pasado en la solicitud
+    String nuevo_rep = null;
+
+    password = request.getParameter("password");
+    nuevo = request.getParameter("nuevo");
+    nuevo_rep = request.getParameter("nuevo_rep");
+    //Se verifican si son cadenas validas esto es que no sea vacio, no contengan ciertos caracteres peligrosos.
+    if (Util.Valido(password) && Util.Valido(nuevo) && Util.Valido(nuevo_rep)) {
+        HttpSession session = request.getSession(false);
+        if ((session == null)) {
+           	//throw new SecurityException("Session nula");
+            request.setAttribute("error", "Session Nula");
+            getServletContext().getRequestDispatcher("/sistema/src/sistema/PaginaError.jsp").forward(request,response);
+         }
+         else if (! request.isRequestedSessionIdValid()) {
+         	//throw new SecurityException("Id de session ya no valida");
+            request.setAttribute("error", "Id de session ya no valida");
+            getServletContext().getRequestDispatcher("/sistema/src/sistema/PaginaError.jsp").forward(request,response);
+         }
+        Integer id = (Integer)session.getAttribute("id.usuario");//String id = (String)session.getAttribute("id.usuario");
+        if(id==null) {
+            //throw new SecurityException("Se tiene una sesion valida pero no un usuario valido ");
+            request.setAttribute("error", "Se tiene una sesion valida pero no un usuario valido");
+            getServletContext().getRequestDispatcher("/sistema/src/sistema/PaginaError.jsp").forward(request,response);
+        }
+        Bd bd = Bd.getBd();
+        Usuario usuario = bd.getUsuario_id(id.intValue());
+        if(usuario==null ){
+        	//throw new SecurityException("No existe el usuario de la session");
+            request.setAttribute("error", "No existe el usuario de la session");
+            getServletContext().getRequestDispatcher("/sistema/src/sistema/PaginaError.jsp").forward(request,response);
+        }
+        usuario.cambiar(password,nuevo,nuevo_rep,request.getRemoteAddr());
+        if(!usuario.Errores()) {
+          response.sendRedirect("/sistema/src/sistema/menu.jsp");
+        }
+        else {
+            request.setAttribute("error", usuario.getErrores());
+            getServletContext().getRequestDispatcher("/sistema/src/sistema/PaginaError.jsp").forward(request,response);
+        }
+    }
+    else {
+    getServletContext().log("No se especificaron los datos o son datos no validos");
+    request.setAttribute("error", "No se especificaron los datos o son datos invalidos");
+    getServletContext().getRequestDispatcher("/sistema/src/sistema/PaginaError.jsp").forward(request,response);
+    }
+  }
+
+  /**Limpiar recursos*/
+  public void destroy() {
+  }
+}
+
+/*
+        if (!usuario.contraseña(password) ) {
+        	//throw new SecurityException("La constraseña anterior introducida no es la correcta");
+            request.setAttribute("error", "La constraseña anterior introducida no es la correcta");
+            getServletContext().getRequestDispatcher("/sistema/src/sistema/PaginaError.jsp").forward(request,response);
+        }
+
+        usuario.setPassword(nuevo);
+        usuario.setPassword2(nuevo_rep);
+        if (!usuario.Errores()){
+          try {
+          usuario.password_digest();
+          bd.setUpdate(usuario);
+          bd.setLog(usuario.getId_i(),bd.MODI,"modificado:pass",request.getRemoteAddr());
+          response.sendRedirect("/sistema/src/sistema/menu.jsp");
+          }
+          catch(Exception e) {
+            //throw new SecurityException("No fue posible la actualizacion de la constraseña");
+            request.setAttribute("error", "No fue posible la actualizacion de la constraseña");
+            getServletContext().getRequestDispatcher("/sistema/src/sistema/PaginaError.jsp").forward(request,response);
+          }
+        }
+*/

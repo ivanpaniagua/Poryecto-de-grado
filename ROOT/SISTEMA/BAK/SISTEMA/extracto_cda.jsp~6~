@@ -1,0 +1,99 @@
+<%@ page import="business.*" %>
+<%@ page session="false" %>
+
+<%-- Se necesita la session en falso para que no crear un objeto "session"
+dentro de la pagina, puesto que si existe algun error como de
+session o id de session no valida (expira la session), no se genere una session valida
+nuevamente, sin embargo aunque no se considerara esto y se creara una session
+nueva en esta pagina no se tendria el valor (id.usuario) dentro la session --%>
+
+<%@ page errorPage="PaginaError.jsp" %>
+<%
+ response.setHeader("Cache-Control", "no-cache");
+ response.setHeader("Pragma", "no-cache");
+ response.setHeader("Expires", "-1");
+
+ HttpSession session = request.getSession(false);
+ if ((session == null)) {
+   	throw new SecurityException("Session nula");
+ }
+ else if (! request.isRequestedSessionIdValid()) {
+  	throw new SecurityException("Id de session ya no valida");
+ }
+
+ Integer id = (Integer)session.getAttribute("id.usuario");
+
+ if (id==null) {
+  	throw new SecurityException("Se tiene una session valida pero no un usuario valido ");
+ }
+
+ Bd bd = Bd.getBd();
+ Usuario usuario = bd.getUsuario_id(id.intValue());
+ if (usuario==null) {
+  	throw new SecurityException("No existe el usuario de la session");
+ }
+ String sel = request.getParameter("cda");
+
+%>
+
+<html>
+<head>
+<title> EXTRACTO DE CUENTA EN CAJA DE AHORRO </title>
+</head>
+
+<body bgcolor="#CCCCD6" text="#000000">
+<center>
+<img src="../../../imagenes/comunidad.jpg" width="764" height="65">
+<hr size="3">
+<img src="../../../imagenes/caja.jpg" width="482" height="30">
+<%--se podria utilizar un throw new SecurityException pero quedaria invalida la session --%>
+<%if(sel == null) { %>
+  <p><font color=red>Seleccione por lo menos una cuenta</font></p>
+<%}
+  else {
+   Vector trans = usuario.getTransacciones(Integer.parseInt(sel), "cda" );
+   double saldo=0.0;
+%>
+  <p><font face="Arial, Helvetica, sans-serif" size="4"><b>Cuenta : "<%= sel %>"</b></font> </p>
+  <hr width="170" size="5">
+  <p><table id="mitabla1" cellspacing="0" border="1" cellpadding="7" bgcolor="#F4F2EA">
+  <tr>
+    <th bgcolor="#006666"> <font face="arial,helvetica" size="-1" color="#FFFFFF">Fecha </font></th>
+    <th bgcolor="#006666"> <font face="arial,helvetica" size="-1" color="#FFFFFF">Operacion  </font></th>
+    <th bgcolor="#006666"> <font face="arial,helvetica" size="-1" color="#FFFFFF">Monto Debe   </font></th>
+    <th bgcolor="#006666"> <font face="arial,helvetica" size="-1" color="#FFFFFF">Monto Haber  </font></th>
+    <th bgcolor="#006666"> <font face="arial,helvetica" size="-1" color="#FFFFFF">Saldo Cuenta </font></th>
+  </tr>
+
+<%
+  for (int i = 0; i < trans.size(); i++) {
+    Transaccion tr = (Transaccion)trans.get(i);
+    out.println("<tr>");
+    out.println(" <td>" + tr.getFecha() +"</td>");
+    out.println(" <td>" + tr.getOperacion() +"</td>");
+    if (tr.getD_h().equals("d")) {
+      out.println(" <td> <div align='right'> " + Util.DobleString(tr.getMonto()) + "</div></td>");
+      out.println(" <td>&nbsp;</td>");
+      saldo = saldo - tr.getMonto();
+    }
+    else {
+      out.println(" <td>&nbsp;</td>");
+      out.println(" <td> <div align='right'> " + Util.DobleString(tr.getMonto()) + "</div></td>");
+      saldo = saldo + tr.getMonto();
+    }
+    out.println(" <td> <div align='right'>" + Util.DobleString(saldo) + "</div></td>");
+    out.println("</tr>");
+  }
+%>
+</table>
+<br>
+<%}%> <%-- fin del else de sel==null--%>
+
+<hr size="3">
+<a href="../../../index.html"><img src="../../../imagenes/inicio.jpg" width="38" height="37" alt="inicio" border="0"></a>&nbsp;&nbsp;<a href="pag_cambio.html"><img src="../../../imagenes/contrasena.jpg" width="86" height="37" alt="contrasena" border="0"></a>&nbsp;&nbsp;<a href="/servlet/control"><img src="../../../imagenes/contacto.jpg" width="61" height="37" alt="contacto" border="0"></a>
+  &nbsp;&nbsp;<a href="/servlet/salir"><img src="../../../imagenes/salir.jpg" border="0" alt="salir"></a><br>
+<hr size="3">
+
+</center>
+</body>
+</html>
