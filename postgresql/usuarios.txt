@@ -1,0 +1,8 @@
+4467616	ivan	aafdb6e5bb411d5d0ebbd4feecdfb1af	Paniagua Monroy Ivan	paniagur@estudiantes.ucbcba.edu.bo	bak@bigfoot.com	n	10	10
+767038	antezanal	2b7b10774e36faa3a432def8887429b4	Antezana Ledezma Laura	unkn@supernet.com.bo	''	n	3	3
+3613718	rivero_m	f8d7ceb1a201753bd211fa073103dbca	Rivero Bellido Mariela	rivero_cbcba@hotmail.com	''	n	3	3
+3621143	doradoolm	a0a864b5c5a316766debaa3721e3a683	Dorado Uzeda Olmos	benigna_cbba@email.com	''	n	3	3
+28283222	rojasq	2d5e874b870cd13ce524820ea4048f95	Rojas Quiroga Manuel	rojas_q@supernet.com.bo	''	n	3	3
+28283222	arevalomm	6c3b5a024613e9c15f4febfd190124ac	Arevalo Encinas Jaime	arevaloq@supernet.com.bo	''	n	3	3
+4467616	mit_kev	65e6ca0e8150f97fb4e7b24adefa4bd4	Mitnick Kevin	unkn@bigfoot.com	''	n	3	3
+

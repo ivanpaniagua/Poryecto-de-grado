@@ -1,0 +1,584 @@
+DEBUG:  database system was interrupted at 2003-08-29 17:01:03 
+DEBUG:  checkpoint record is at 0/28A5F0
+DEBUG:  redo record is at 0/28A5F0; undo record is at 0/0; shutdown FALSE
+DEBUG:  next transaction id: 373; next oid: 41132
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/28A630
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+DEBUG:  database system was interrupted at 2003-08-31 23:09:56 
+DEBUG:  checkpoint record is at 0/28A630
+DEBUG:  redo record is at 0/28A630; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 373; next oid: 41132
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/28A670
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+DEBUG:  database system was interrupted at 2003-08-31 23:21:42 
+DEBUG:  checkpoint record is at 0/28A670
+DEBUG:  redo record is at 0/28A670; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 373; next oid: 41132
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/28A6B0
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+ERROR:  parser: parse error at or near """
+DEBUG:  database system was interrupted at 2003-08-31 23:31:37 
+DEBUG:  checkpoint record is at 0/28A6B0
+DEBUG:  redo record is at 0/28A6B0; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 373; next oid: 41132
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  redo starts at 0/28A6F0
+DEBUG:  ReadRecord: record with zero length at 0/28E800
+DEBUG:  redo done at 0/28E7D8
+DEBUG:  database system is ready
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+Lock file "/tmp/.s.PGSQL.5432.lock" already exists.
+Is another postmaster (pid 1632) using "/tmp/.s.PGSQL.5432"?
+/usr/bin/postmaster: cannot create UNIX stream port
+DEBUG:  database system was interrupted at 2003-09-01 22:41:03 
+DEBUG:  checkpoint record is at 0/2ABC88
+DEBUG:  redo record is at 0/2ABC88; undo record is at 0/0; shutdown FALSE
+DEBUG:  next transaction id: 547; next oid: 73900
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2ABCC8
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+ERROR:  parser: parse error at or near """
+DEBUG:  database system was interrupted at 2003-09-02 17:32:57 
+DEBUG:  checkpoint record is at 0/2B3F48
+DEBUG:  redo record is at 0/2B3F48; undo record is at 0/0; shutdown FALSE
+DEBUG:  next transaction id: 578; next oid: 82092
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2B3F88
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+DEBUG:  database system was interrupted at 2003-09-04 08:25:34 
+DEBUG:  checkpoint record is at 0/2B3F88
+DEBUG:  redo record is at 0/2B3F88; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 578; next oid: 82092
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2B3FC8
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+DEBUG:  database system was interrupted at 2003-09-04 18:05:36 
+DEBUG:  checkpoint record is at 0/2B3FC8
+DEBUG:  redo record is at 0/2B3FC8; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 578; next oid: 82092
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2B4020
+DEBUG:  redo is not required
+DEBUG:  database system shutdown was interrupted at 2003-09-05 08:31:56 
+DEBUG:  checkpoint record is at 0/2B3FC8
+DEBUG:  redo record is at 0/2B3FC8; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 578; next oid: 82092
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2B4020
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+DEBUG:  database system was interrupted at 2003-09-05 08:32:20 
+DEBUG:  checkpoint record is at 0/2B4020
+DEBUG:  redo record is at 0/2B4020; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 578; next oid: 82092
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2B4060
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+DEBUG:  pq_recvbuf: recv() failed: The descriptor is a file, not a socket
+DEBUG:  incomplete startup packet
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+ERROR:  Relation "t_usuarios" does not exist
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  database system was interrupted at 2003-09-05 08:37:19 
+DEBUG:  checkpoint record is at 0/2B4060
+DEBUG:  redo record is at 0/2B4060; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 578; next oid: 82092
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2B40A0
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+DEBUG:  pq_recvbuf: recv() failed: The descriptor is a file, not a socket
+DEBUG:  incomplete startup packet
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+FATAL 1:  invalid length of startup packet
+FATAL 1:  Socket command type E unknown
+DEBUG:  database system was interrupted at 2003-09-05 09:04:18 
+DEBUG:  checkpoint record is at 0/2B40A0
+DEBUG:  redo record is at 0/2B40A0; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 578; next oid: 82092
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2B40E0
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: unexpected EOF on client connection
+DEBUG:  pq_recvbuf: recv() failed: The descriptor is a file, not a socket
+DEBUG:  incomplete startup packet
+DEBUG:  database system was interrupted at 2003-09-05 09:26:53 
+DEBUG:  checkpoint record is at 0/2B4120
+DEBUG:  redo record is at 0/2B4120; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 578; next oid: 82092
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2B4160
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+Lock file "/tmp/.s.PGSQL.5432.lock" already exists.
+Is another postmaster (pid 1052) using "/tmp/.s.PGSQL.5432"?
+/usr/bin/postmaster: cannot create UNIX stream port
+Lock file "/tmp/.s.PGSQL.5432.lock" already exists.
+Is another postmaster (pid 1052) using "/tmp/.s.PGSQL.5432"?
+/usr/bin/postmaster: cannot create UNIX stream port
+Lock file "/usr/local/pgsql/data/postmaster.pid" already exists.
+Lock file "/usr/local/pgsql/data/postmaster.pid" already exists.
+"?
+Is another postmaster (pid 1156) running in "/usr/local/pgsql/data"?
+Lock file "/tmp/.s.PGSQL.5432.lock" already exists.
+Is another postmaster (pid 1156) using "/tmp/.s.PGSQL.5432"?
+/usr/bin/postmaster: cannot create UNIX stream port
+DEBUG:  database system was interrupted at 2003-09-10 12:45:43 
+DEBUG:  checkpoint record is at 0/2B4160
+DEBUG:  redo record is at 0/2B4160; undo record is at 0/0; shutdown TRUE
+DEBUG:  next transaction id: 578; next oid: 82092
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2B41A0
+DEBUG:  redo is not required
+Lock file "/tmp/.s.PGSQL.5432.lock" already exists.
+Is another postmaster (pid 1156) using "/tmp/.s.PGSQL.5432"?
+/usr/bin/postmaster: cannot create UNIX stream port
+DEBUG:  database system is ready
+ERROR:  parser: parse error at or near """
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  database system was interrupted at 2003-09-10 13:04:51 
+DEBUG:  checkpoint record is at 0/2B92B8
+DEBUG:  redo record is at 0/2B92B8; undo record is at 0/0; shutdown FALSE
+DEBUG:  next transaction id: 634; next oid: 90284
+DEBUG:  database system was not properly shut down; automatic recovery in progress
+DEBUG:  ReadRecord: record with zero length at 0/2B92F8
+DEBUG:  redo is not required
+DEBUG:  database system is ready
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
+DEBUG:  pq_recvbuf: recv() failed: Connection reset by peer
