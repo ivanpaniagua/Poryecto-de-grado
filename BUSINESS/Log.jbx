@@ -1,0 +1,11 @@
+[PropertyInfo]
+datos,String,false,false, , ,true,<default>
+fecha,String,false,false, , ,true,<default>
+id_i,String,false,false, , ,true,<default>
+ip,String,false,false, , ,true,<default>
+descripcion,String,false,false,descripcion,descripcion,true,<default>
+[IconNames]
+
+
+
+

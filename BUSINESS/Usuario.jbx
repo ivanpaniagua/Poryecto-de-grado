@@ -1,0 +1,25 @@
+[PropertyInfo]
+bloqueo,String,false,false, , ,true,<default>
+ci,String,false,false, , ,true,<default>
+creacion,String,false,false, , ,true,<default>
+cuentas_ahorro,java.util.Vector,false,false, , ,true,<default>
+cuentas_cred,java.util.Vector,false,false, , ,true,<default>
+cuentas_dpf,java.util.Vector,false,false, , ,true,<default>
+email1,String,false,false, , ,true,<default>
+email2,String,false,false, , ,true,<default>
+errores,String,false,false, , ,true,<default>
+id_i,String,false,false, , ,true,<default>
+id_i,int,false,false, , ,true,<default>
+intentos_c,int,false,false, , ,true,<default>
+intentos_c,String,false,false, , ,true,<default>
+intentos_d,int,false,false, , ,true,<default>
+intentos_d,String,false,false, , ,true,<default>
+login,String,false,false, , ,true,<default>
+nombre,String,false,false, , ,true,<default>
+password,String,false,false, , ,true,<default>
+password2,String,false,false, , ,true,<default>
+[IconNames]
+
+
+
+

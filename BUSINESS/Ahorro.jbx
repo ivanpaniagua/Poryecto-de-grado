@@ -1,0 +1,16 @@
+[PropertyInfo]
+cda,String,false,false, , ,true,<default>
+fecha,String,false,false, , ,true,<default>
+inpp,double,false,false, , ,true,<default>
+inpp,String,false,false, , ,true,<default>
+interes,double,false,false, , ,true,<default>
+interes,String,false,false, , ,true,<default>
+moneda,String,false,false, , ,true,<default>
+periodo,String,false,false, , ,true,<default>
+saldo,double,false,false, , ,true,<default>
+saldo,String,false,false, , ,true,<default>
+[IconNames]
+
+
+
+

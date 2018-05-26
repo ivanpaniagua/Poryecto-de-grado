@@ -1,0 +1,23 @@
+[PropertyInfo]
+caja_a,String,false,false, , ,true,<default>
+cred,String,false,false, , ,true,<default>
+ctacble,String,false,false, , ,true,<default>
+diasamort,String,false,false, , ,true,<default>
+f_1cuota,String,false,false, , ,true,<default>
+f_desemb,String,false,false, , ,true,<default>
+f_ultmov,String,false,false, , ,true,<default>
+monto,double,false,false, , ,true,<default>
+monto,String,false,false, , ,true,<default>
+plazo,String,false,false, , ,true,<default>
+saldo,double,false,false, , ,true,<default>
+saldo,String,false,false, , ,true,<default>
+tasa,double,false,false, , ,true,<default>
+tasa,String,false,false, , ,true,<default>
+tipoamort,String,false,false, , ,true,<default>
+tipocuota,String,false,false, , ,true,<default>
+tiposerv,String,false,false, , ,true,<default>
+[IconNames]
+
+
+
+
