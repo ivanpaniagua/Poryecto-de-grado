@@ -1,4 +1,5 @@
 #Proyecto de Grado
+
 Sistema de consultas financieras a traves de Internet para una entidad financiera
 
 Diagrama de la arquitectura del sistema
