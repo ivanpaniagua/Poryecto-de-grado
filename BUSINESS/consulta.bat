@@ -1,0 +1,12 @@
+@echo off
+rem se levanta primero la base de datos
+rem luego se levanta Apache
+rem por ultimo se levanta Tomcat
+
+rem start D:\Apache\src\Business\SRC\postgresql\postgresql.bat
+
+rem  start D:\Apache\apache.exe
+
+rem D:\JBuilder6\jdk1.3.1\bin\javaw -classpath "D:\JBuilder6\jakarta-tomcat-3.2.3\webapps\ROOT\WEB-INF\classes;D:\Apache\src\Business\CLASSES;D:\JBuilder6\lib\dx.jar;D:\JBuilder6\lib\beandt.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\servlet.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\ant.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\jasper.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\jaxp.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\parser.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\webserver.jar;D:\JBuilder6\jdk1.3.1\demo\jfc\Java2D\Java2Demo.jar;D:\JBuilder6\jdk1.3.1\jre\lib\i18n.jar;D:\JBuilder6\jdk1.3.1\jre\lib\jaws.jar;D:\JBuilder6\jdk1.3.1\jre\lib\rt.jar;D:\JBuilder6\jdk1.3.1\jre\lib\sunrsasign.jar;D:\JBuilder6\jdk1.3.1\jre\lib\ext\bouncycastle.jar;D:\JBuilder6\jdk1.3.1\jre\lib\ext\mm.mysql-2.0.6.jar;D:\JBuilder6\jdk1.3.1\jre\lib\ext\postgresql.jar;D:\JBuilder6\jdk1.3.1\lib\dt.jar;D:\JBuilder6\jdk1.3.1\lib\htmlconverter.jar;D:\JBuilder6\jdk1.3.1\lib\tools.jar"  -Dtomcat.home=d:/Jbuilder6/jakarta-tomcat-3.2.3 
+
+D:\JBuilder6\jdk1.3.1\bin\javaw -classpath "D:\JBuilder6\jakarta-tomcat-3.2.3\webapps\ROOT\WEB-INF\classes;D:\Apache\src\Business\CLASSES;D:\JBuilder6\lib\dx.jar;D:\JBuilder6\lib\beandt.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\servlet.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\jasper.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\jaxp.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\parser.jar;D:\JBuilder6\jakarta-tomcat-3.2.3\lib\webserver.jar;D:\JBuilder6\jdk1.3.1\demo\jfc\Java2D\Java2Demo.jar;D:\JBuilder6\jdk1.3.1\jre\lib\i18n.jar;D:\JBuilder6\jdk1.3.1\jre\lib\jaws.jar;D:\JBuilder6\jdk1.3.1\jre\lib\rt.jar;D:\JBuilder6\jdk1.3.1\jre\lib\sunrsasign.jar;D:\JBuilder6\jdk1.3.1\jre\lib\ext\bouncycastle.jar;D:\JBuilder6\jdk1.3.1\jre\lib\ext\mm.mysql-2.0.6.jar;D:\JBuilder6\jdk1.3.1\jre\lib\ext\postgresql.jar;D:\JBuilder6\jdk1.3.1\lib\dt.jar;D:\JBuilder6\jdk1.3.1\lib\htmlconverter.jar;D:\JBuilder6\jdk1.3.1\lib\tools.jar"  -Dtomcat.home=d:/Jbuilder6/jakarta-tomcat-3.2.3 org.apache.tomcat.startup.Tomcat 
