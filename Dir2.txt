@@ -1,0 +1,230 @@
+http://members.es.tripod.de/nnsoluciones/crackers.htm
+http://www.password-crackers.com/crack.html
+http://theory.stanford.edu/~dabo/abstracts/  
+
+
+
+http://www.websphere-users.ca/presentations/03202003/Candle_WAS_Best_Practices.pdf
+http://www.candle.com/www1/vgn/images/portal/cit_6885/3249714WSDJ_Part1_2.pdf
+http://www.iiug.org/downloads/20030523160433_17444/IIUG-IDS-9-4-win2k.zip
+
+ver 6-8 patterns PG18 what is an application framework
+
+http://www.therationaledge.com/admin/archives.jsp
+
+http://madarab.com/pictures/misc/swf/tele.swf
+www.sys-con.com/java/pdf/javalinux.pdf
+www.sys-con.com/java/archives.cfm
+
+http://www.sap.com/community/events/2002_lisbon/agenda_t12.asp
+http://207.139.89.10/articles_p6.asp financial TI
+
+
+013034799X
+0130479500
+0130428329
+0130670286
+
+ARCHPR-TBHW5SSMYGQS-9UTGHPPMNW2TEXZ9
+ARCHPR winzippass
+
+winzip:   ivan    75E10282
+
+http://www.compbeat.com/othershows.htm  radios computer
+
+http://www.oracle.com/start/ocp/9i.html?src=1192037&Act=22
+http://www.oracle.com/global/ea/
+http://www.oracle.com/features/9i/index.html?t1db_unbrlinux.html
+http://www.oracle.com/oramag/webcolumns/2001/opress/index.html?ch17-3.html
+http://www.intelinfo.com/newly_researched_free_training/Oracle.html
+http://books.mcgraw-hill.com/cgi-bin/oraclepress/0072133252.html
+http://www.oraclecompaqclusters.com
+
+
+http://www.w2000mag.com
+http://www.win2000mag.com/
+www.windx.com revista de VB 
+Win2ksecrets.com
+http://www.vbcity.com/page.asp?f=books-wrox&p=sample_chapters
+http://www.solsem.com/vid_sample.html bajar el video
+
+
+
+http://www.pcworld.com/downloads/file_description/0,fid,8132,00.asp
+http://www.careerbuilder.com/index.htm?
+
+http://www.getgirls.com/archive.htm
+http://www.alovelinksplus.com/advice/conversation_topics.htm
+
+http://www.programmersheaven.com/
+http://books.mcgraw-hill.com/betabooks/
+http://www.intelinfo.com/free_computer_books.html
+http://www.epinions.com/mags-Harvard_Business_Review
+http://maththinking.com/boat/computerbooks.html
+
+http://www.scannerx.com/free1.htm escanean tu sitio
+
+http://www.mailgate.org/misc/misc.jobs.contract/index.html
+
+http://www.preemptive.com/training/index.html  decompilation
+
+http://dcb.sun.com/practices/casestudies/work24_part1.jsp con tomcat banco
+http://servlet.java.sun.com/javaone/sf2002/conf/sessions/20-advanced-expanded.en.jsp
+
+http://latinamericanjobs.com/paises/bolivia-com/
+http://www.nazcanet.com/economia/banca_comercial/ lista d ebancos 
+
+www.certisur.com
+www.rpost.com
+
+http://cis.gsu.edu/~wrobinso/courses/cis3310/ 
+http://www.it.rit.edu/~wjs/IT/199602/
+http://www.isnetworks.com/      Securing a Database
+
+
+-exelente ejmplo de transacciones en cywin/postgresql/src/interfaces/jdbc/example/threadsafe.java
+
+-Like all Java environments, there is a Security Manager to control servlet “activities”.[jdbc-servlets.pdf]
+
+-se tiene una buena defincion de firewall en JavaArchiteckt.doc
+
+-se tiene que probar la seguridad del driver por ejemplo se puede hacer
+	con =DriverManager.getConnection("jdbc:omnidex:c:/odxclnt/ds/test.dsn", "", "");[jdbc-servlets.pdf]
+
+-la mayoria de las JVM autmaticamente toman ventaja de procesadores adicionales [jspservlet.pdf]compreso
+-es posible crear una solucion completa desde un solo lenguaje de programacion. [sg245342+o-]
+-Es imposible en teoria introducir codigo malicioso dentro de una aplicacion java.[JDJ 6-10 pag. 90]
+tambien se menciona la manera intrinseca (Intimo, esencial:merito|| sinonimo interior, Valor intrinseco 
+de una cosa el que tiene de por si a diferencia del convencional) que actua la JVM
+
+en rational rose caundo se añade los nuevos wae2.exe de conallen
+se debe renombrar los archivos ASPPage y JSPPAge por ASP y JSP
+ademas cambiar dentro de waestereotypes.ini en inputform.emf por form.emf
+
+
+http://guitarra.net/gogh.htm
+Nirvana - Enter Sandman (Metalica Cover)
+Creed - With Arms Wide Open (Acoustic).mp3  strings version - instrumental
+Creed - Whats This Life For (Acoustic with a piano).mp3
+
+
+
+
+Ing. Rosales:
+Le comento que conversamos con su hermano acerca de la exposicion que 
+debia realizar con los de la cooperativa, pero me dijo que iban a entrar
+en cambio de directiva y que no se podria hacer nada hasta recien en dos semanas,
+asi que su hermano me pidio un poco mas de tiempo, pero que iba a buscar alguna
+otra cooperativa.
+Mientras tanto para acelerar un poco esto, le envio la carta que realice 
+para la Universidad y quisiera que me la revise y me ayude un poco a mejorarla
+ya que es muy importante y como lo habra notado, yo no soy bueno en redactar cartas.
+
+Sin otro particular, me despido atentamente
+
+Ivan Paniaguia Monroy
+---------------------------------------------------------------
+Ing. Rosales:
+
+Tal como habiamos quedado, le comento que converse con la Mgr. Puente el dia marte de la anterior semana y me dijo que tenia que escribir una carta al vicerector esperando su aprobacion para mi caso. Aun,le comento que no hemos recibido respuesta de su parte, pero mientras tanto me gustaria, aprovechando que voy a tener un poco más de tiempo, llegar al dia de mi exposición con alguna institución financiera en particular.
+Eso es todo por ahora, Ing. Rosales, sin otro en particular, me despido atentamente.
+
+Ivan Paniagua Monroy
+
+
+www.coboce.com
+
+HTTP/1.1 200 OK
+Date: Thu, 16 May 2002 21:45:34 GMT
+Server: Apache/1.3.12 (Unix)  (Red Hat/Linux)
+Last-Modified: Mon, 24 Dec 2001 12:18:51 GMT
+ETag: "4016-3ce-3c271d2b"
+Accept-Ranges: bytes
+Content-Length: 974
+Connection: close
+Content-Type: text/html
+
+
+www.bnb.com.bo
+
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/4.0
+Content-Location: http://1.1.0.1/Index.htm
+Date: Thu, 16 May 2002 21:31:06 GMT
+Content-Type: text/html
+Accept-Ranges: bytes
+Last-Modified: Wed, 23 Jan 2002 13:38:11 GMT
+ETag: "30a7843313a4c11:4049"
+Content-Length: 7181
+
+
+166.114.108.1
+166.114.102.1
+
+GET / HTTP/1.0 
+
+
+64.110.64.101 - - [21/Apr/2002:23:08:29 -0400] "GET /scripts/root.exe?/c+dir HTTP/1.0" 404 395
+64.110.64.101 - - [21/Apr/2002:23:08:35 -0400] "GET /MSADC/root.exe?/c+dir HTTP/1.0" 404 395
+64.110.64.101 - - [21/Apr/2002:23:08:38 -0400] "GET /c/winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.64.101 - - [21/Apr/2002:23:08:46 -0400] "GET /d/winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.64.101 - - [21/Apr/2002:23:08:50 -0400] "GET /scripts/..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.64.101 - - [21/Apr/2002:23:08:56 -0400] "GET /_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.64.101 - - [21/Apr/2002:23:09:02 -0400] "GET /_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.70.246 - - [22/Apr/2002:00:46:42 -0400] "GET /scripts/root.exe?/c+dir HTTP/1.0" 404 395
+64.110.70.246 - - [22/Apr/2002:00:46:56 -0400] "GET /MSADC/root.exe?/c+dir HTTP/1.0" 404 395
+64.110.70.246 - - [22/Apr/2002:01:11:14 -0400] "GET /scripts/root.exe?/c+dir HTTP/1.0" 404 395
+127.0.0.1 - - [22/Apr/2002:08:48:15 -0400] "GET / HTTP/1.1" 200 2058
+127.0.0.1 - - [22/Apr/2002:08:48:16 -0400] "GET /apache_pb.gif HTTP/1.1" 200 2326
+127.0.0.1 - - [22/Apr/2002:08:48:18 -0400] "GET /ivan.class HTTP/1.1" 200 15919
+127.0.0.1 - - [22/Apr/2002:08:48:18 -0400] "GET / HTTP/1.1" 304 -
+64.110.70.246 - - [22/Apr/2002:15:42:27 -0400] "GET /scripts/root.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:05 -0400] "GET /scripts/root.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:09 -0400] "GET /MSADC/root.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:12 -0400] "GET /c/winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:17 -0400] "GET /d/winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:21 -0400] "GET /scripts/..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:28 -0400] "GET /_vti_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:33 -0400] "GET /_mem_bin/..%255c../..%255c../..%255c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:37 -0400] "GET /msadc/..%255c../..%255c../..%255c/..%c1%1c../..%c1%1c../..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:43 -0400] "GET /scripts/..%c1%1c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:49 -0400] "GET /scripts/..%c0%2f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:56 -0400] "GET /scripts/..%c0%af../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:08:59 -0400] "GET /scripts/..%c1%9c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:09:04 -0400] "GET /scripts/..%%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 400 277
+64.110.82.252 - - [25/Apr/2002:08:09:09 -0400] "GET /scripts/..%%35c../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 400 277
+64.110.82.252 - - [25/Apr/2002:08:09:12 -0400] "GET /scripts/..%25%35%63../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.82.252 - - [25/Apr/2002:08:09:17 -0400] "GET /scripts/..%252f../winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.95.242 - - [25/Apr/2002:08:24:14 -0400] "GET /scripts/root.exe?/c+dir HTTP/1.0" 404 395
+64.110.95.242 - - [25/Apr/2002:08:24:22 -0400] "GET /MSADC/root.exe?/c+dir HTTP/1.0" 404 395
+64.110.95.242 - - [25/Apr/2002:08:24:32 -0400] "GET /c/winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+64.110.95.242 - - [25/Apr/2002:08:24:39 -0400] "GET /d/winnt/system32/cmd.exe?/c+dir HTTP/1.0" 404 395
+
+
+2002-03-25 21:46:28 - PoolTcpConnector: Starting HttpConnectionHandler on 8080
+2002-03-25 21:46:28 - PoolTcpConnector: Starting Ajp13ConnectionHandler on 8009
+se ha creado una nuevo objeto Bd
+2002-03-25 22:24:28 - ContextManager: SocketException reading request, ignored - java.net.SocketException: Connection reset by peer: JVM_recv in socket input stream read
+	at java.net.SocketInputStream.socketRead(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:86)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:186)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:204)
+	at org.apache.tomcat.service.http.HttpRequestAdapter.doRead(HttpRequestAdapter.java:115)
+	at org.apache.tomcat.core.BufferedServletInputStream.doRead(BufferedServletInputStream.java:106)
+	at org.apache.tomcat.core.BufferedServletInputStream.read(BufferedServletInputStream.java:128)
+	at javax.servlet.ServletInputStream.readLine(ServletInputStream.java:138)
+	at org.apache.tomcat.service.http.HttpRequestAdapter.readNextRequest(HttpRequestAdapter.java:129)
+	at org.apache.tomcat.service.http.HttpConnectionHandler.processConnection(HttpConnectionHandler.java:198)
+	at org.apache.tomcat.service.TcpWorkerThread.runIt(PoolTcpEndpoint.java:416)
+	at org.apache.tomcat.util.ThreadPool$ControlRunnable.run(ThreadPool.java:501)
+	at java.lang.Thread.run(Thread.java:484)
+
+ERROR EN EL REGISTRO DEL LOG: java.sql.SQLException: ERROR:  value too long for type character varying(100)
+
+ERROR EN EL REGISTRO DEL LOG: java.sql.SQLException: ERROR:  value too long for type character varying(100)
+
+SE GENERO UN ERROR AL QUERER ACTUALIZAR EL LOGjava.sql.SQLException: ERROR:  value too long for type character varying(100)
+someone on address gate1.supernet.com.bo [166.114.108.1] wants to send ICMP packet to your machine
+'POSTGRES.EXE' from your computer wants to connect to ivan [127.0.0.1], port 1797
+Application from your computer wants to send ICMP packet to 66-3-235-222.customer.algx.net [66.3.235.222]
+
